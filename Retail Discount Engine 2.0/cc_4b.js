@@ -27,3 +27,9 @@ for ( let product of products){
 let promoPrice = product.price - (product.price*discount);
     product.promoPrice = product.price;
 }
+    let finalTotal = subtotal;
+    if (customer.type === "student") {
+        finalTotal *= 0.95;
+    } else if (customer.type === "senior") {
+        finalTotal *= 0.93;
+    }
