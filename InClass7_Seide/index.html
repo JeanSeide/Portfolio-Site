@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CTA Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-indigo-600">
+                StartupPro
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#main" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#update-cta" class="nav-link">Editor</a>
+                <a href="#footer" class="nav-link">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-600 hover:text-indigo-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+
+    <main id="main" class="py-20 md:py-32 text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 id="main-cta-headline" class="text-4xl sm:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            Elevate Your Business with Clarity and Speed.
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+            We provide powerful tools and data insights designed to help modern marketing teams execute campaigns efficiently and effectively.
+        </p>
+        <button class="cta-button bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 text-lg">
+            Start Your Free Trial
+        </button>
+    </main>
+
+
+    <section id="update-cta" class="bg-indigo-50 py-16">
+        <div class="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-2xl border border-indigo-100">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Live CTA Headline Editor</h2>
+                <p class="text-sm text-gray-500 mb-6 text-center">Enter your new headline and click 'Update' to see it instantly.</p>
+                <div class="space-y-4">
+                    <input
+                        type="text"
+                        id="new-cta-input"
+                        placeholder="New marketing message..."
+                        class="w-full p-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                    >
+                    <button
+                        id="update-cta-button"
+                        class="update-btn"
+                    >
+                        Update Headline Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How We Help You Grow</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="service-block">
+                <div class="text-4xl text-indigo-600 mb-4">📊</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Data Visualization</h3>
+                <p class="text-gray-600">Intuitive dashboards that transform raw data into actionable insights for rapid decision-making.</p>
+            </div>
+            <div class="service-block">
+                <div class="text-4xl text-indigo-600 mb-4">🧠</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Predictive Modeling</h3>
+                <p class="text-gray-600">Forecast future trends and identify high-value customer segments before your competitors do.</p>
+            </div>
+            <div class="service-block">
+                <div class="text-4xl text-indigo-600 mb-4">⚙️</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Workflow Automation</h3>
+                <p class="text-gray-600">Automate repetitive tasks to free up your team and focus on strategic, high-impact activities.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">StartupPro</h3>
+                    <p class="text-gray-400">&copy; 2025 All Rights Reserved.</p>
+                </div>
+                <div class="space-y-2 text-right">
+                    <p class="text-sm">Get in touch:</p>
+                    <p class="text-lg font-semibold">contact@startuppro.com</p>
+                    <p class="text-gray-400">Tampa, Florida </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="activity_7.js"></script>
+</body>
+</html>
