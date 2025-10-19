@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Tell Us What You Think</h1>
+        
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" data-tooltip="Please enter your full name." required>
+                <div class="tooltip" aria-hidden="true"></div>
+                <div class="validation-message" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" data-tooltip="We need your email for any follow-up." required>
+                <div class="tooltip" aria-hidden="true"></div>
+                <div class="validation-message" aria-live="polite"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments (Max 100 characters):</label>
+                <textarea id="comments" data-tooltip="Tell us about your experience." maxlength="100" required></textarea>
+                <div id="char-count" class="char-count-display">0/100</div> <div class="tooltip" aria-hidden="true"></div>
+                <div class="validation-message" aria-live="polite"></div>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <h2>Recent Feedback</h2>
+        <div id="feedback-display">
+            <p>No feedback submitted yet.</p>
+        </div>
+    </main>
+
+    <script src="cp_1.js"></script>
+</body>
+</html>
